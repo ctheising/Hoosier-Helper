@@ -1,0 +1,15 @@
+.banner{
+	background: white;
+	height: 250px;
+	color: black;
+	text-align: center;
+	background-image: url(group.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.banner h2{
+	color: white;
+	padding: 8%;
+	font-size: 60px;
+}

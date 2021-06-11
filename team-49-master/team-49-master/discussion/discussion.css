@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #e1e1e1;
+	font-family: BentonSans;
+	word-wrap: break-word;
+}
+
+.logo img{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 10px;
+	height: 75px;
+	width: 68px;
+}
+
+.header{
+	background: white;
+	padding: 6px 90px;
+	text-align: left;
+	color: black;
+	margin: 0px;
+	letter-spacing: 1px;
+	font: BentonSans-regular;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.banner{
+	background: white;
+	
+	
+	color: black;
+	max-width: 100%;
+	text-align: left;
+	
+
+}
+img{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66%;
+}
+
+table{
+	border: 2px solid black;
+}
+td{
+	word-wrap: break-word;
+}
+
+.forum{
+	
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 100 px;
+	background-color: #990000;
+	
+}

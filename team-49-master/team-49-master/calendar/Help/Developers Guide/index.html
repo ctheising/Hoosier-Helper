@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Paulo">
+
+<title>AFFC2 - Documentation</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="fonts/fonts.css" rel="stylesheet">
+<link href="css/prettify.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	
+<div class="container-fluid">
+<div class="flex-xl-wrap">
+	
+	<!-- Right Sidebar -->
+    <div class="col-12 col-md-3 col-xl-2 hidden-xs doc-sidebar">
+        <h1>AFFC2</h1>
+		<hr />
+		
+		<nav class="collapse doc-links" id="doc-docs-nav">
+		<div class="doc-toc-item active">
+		  <ul class="nav doc-sidenav">
+			<li class="active doc-sidenav-active"><a href="#intro">Documentation</a></li>
+			<li><a href="http://www.pauloreg.com">Author Website</a></li>
+		  </ul>
+		</div>
+		</nav>
+	</div>
+
+	<!-- Left Sidebar -->
+	<div class="d-none d-xl-block col-xl-2 doc-toc">
+		<ul id="toc"></ul>
+	</div>
+
+	<!-- MAIN -->
+	<main id="main-content" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 doc-content" role="main">
+		
+		<!-- intro -->
+		<div>
+			<h1 id="intro">Introduction</h1>
+			<p>This is a basic technical documentation of essential methods and functions you might need for your own integrations, customization or references.</p>
+			<p>When you make customizations, please do take in consideration future updates (especially breaking changes versions), by not modifying directly the essential core files (jquery.calendar.js | calendar.php | calendar.extension.php). Take advantage of the public methods to create your own files.</p>
+			<p>In case you have modified your files, check the changelog file for the modified files so you quickly apply the changes to your modification but its advised that you remain the core functions, variables and naming.</p>
+			<p>For fullcalendar core functions, refer to this documentation: <a href="https://fullcalendar.io/docs/v3">https://fullcalendar.io/docs/v3</a></p>
+		</div>
+		<hr />
+		
+		<!-- classes -->
+		<div>
+			<h1 id="options">Functions</h1>
+		
+			<!-- options -->
+			<div>
+			<h2 id="ps-options">jquery.calendar.js</h2>
+			<p>
+				
+			</p>
+			<table>
+				<tbody><tr>
+				  <th>Name</th>
+				  <th>Args</th>
+				  <th>Description</th>
+				  <th>Returns</th>
+				</tr>
+				<tr>
+				  <td>calendar.openModal</td>
+				  <td><code>elem</code></td>
+				  <td>
+					Opens the modal.<br />
+					<code>elem</code>: Current html element of current event on current view for DOM manipulation.
+				  </td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>calendar.data</td>
+				  <td></td>
+				  <td>Returns the current/last event data from the modal</td>
+				  <td>Object</td>
+				</tr>
+				<tr>
+				  <td>calendar.openModalGcal</td>
+				  <td><code>title</code>,<code>url</code></td>
+				  <td>
+				  Opens/creates a modal with title and external url.<br />
+				  Mainly used to open google calendar events.
+				  </td>
+				  <td>string</td>
+				</tr>
+			  </tbody>
+			</table>
+			
+			<h2 id="ps-options">calendar.php</h2>
+			<p>Will be available on the upcoming update.</p>
+			
+			<h2 id="ps-options">calendar.extension.php</h2>
+			<p>Will be available on the upcoming update.</p>
+			
+			<h3>API</h3>
+			<p>It went back to the development stage and its information will be available soon.</p>
+			
+			<h3>Support</h3>
+			<p>For support go to the <a href="http://pauloreg.com/extras/index.php">Buyer Dashboard</a></p>
+			
+		</div>
+		
+	</main>	
+
+</div>
+</div>	  
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/run_prettify.js"></script>
+<script src="js/jquery.toc.min.js"></script>
+
+<script type="text/javascript">
+    
+	$(document).ready(function() {
+		$("#toc").toc({content: "#main-content", headings: "h1,h2,h3,h4"});
+		
+		$('a[href^="#"]').on('click', function(event) {
+			var target = $(this.getAttribute('href'));
+			if( target.length ) {
+				event.preventDefault();
+				$('html, body').stop().animate({
+					scrollTop: target.offset().top
+				}, 600);
+			}
+		});
+		
+	});
+	
+</script>
+
+ </body>
+</html>

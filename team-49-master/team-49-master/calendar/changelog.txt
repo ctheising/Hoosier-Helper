@@ -1,0 +1,234 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+11.5.20 - Released version 3.2.1.2
+-------------------------------------------------------------------------------------------------------------------------------------
+modified: /js/jquery.calendar.js
+- Fixed defaultColor for easy change (via defaultColor jquery option)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+11.5.20 - Released version 3.2.1.1 (Improvements)
+-------------------------------------------------------------------------------------------------------------------------------------
+modified: /js/jquery.calendar.js
+- Image Uploads now displays the clickable image rather than just the url
+- Fixed editing that made upload reference to be lost
+- Removed Custom Fields HTML empty tags when not present
+
+-------------------------------------------------------------------------------------------------------------------------------------
+6.4.20 - Released version 3.2.1 
+-------------------------------------------------------------------------------------------------------------------------------------
+modified: Admin/Demo2/index.php
+- Added option to prevent non-loggedin users to resize and disable events
+
+-------------------------------------------------------------------------------------------------------------------------------------
+19.09.19 - Released version 3.2 (Breaking changes if you modified core files)
+-------------------------------------------------------------------------------------------------------------------------------------
+
+modified:   /_install.php
+- Fixed issues
+
+modified:   /api.php
+- Will be a new development from now on
+modified:   /calendar.sql
+- Added Null as default value for repeat_id for some mysql versions
+
+modified:   /importer.php
+- Added option to import events or not
+
+modified:   /includes/cal_delete.php
+modified:   /includes/cal_description.php
+modified:   /includes/cal_edit_update.php
+modified:   /includes/cal_export.php
+modified:   /includes/cal_update.php
+- Added data checks
+
+modified:   /includes/calendar.extension.php
+- Fixed bug on drag/drop repetitive events
+
+modified:   /includes/calendar.php
+- Added new functions
+
+modified:   /includes/connection.php
+- Added option to import events or not
+- Added option to view or not private events on "Simple" versions aka non-admin versions
+
+modified:   /includes/install.data.php
+- Included new configurations for the connection.php file that is created on the process
+
+modified:   /js/jquery.calendar.js
+- Alot of strutural changes
+
+- Improved documentation
+
+-------------------------------------------------------------------------------------------------------------------------------------
+19.02.19 - Released version 3.1.5.3
+-------------------------------------------------------------------------------------------------------------------------------------
+
+modified: css/fullcalendar.css
+modified: css/fullcalendar.print.css
+ - Updated to new fullcalendar version 3.10
+
+modified: includes/calendar.php
+ - Improved query to return more events in certain conditions
+
+modified: js/fullcalendar.js
+modified: js/gcal.js
+modified: js/lang-all.js
+removed: js/locale-all.js
+ - Updated to new fullcalendar version 3.10
+
+modified: js/jquery.calendar.js
+ - Improved month time by adding the nextDayThreshold option
+
+modified: lib/jquery.js
+modified: lib/moment.js
+ - Updated to new fullcalendar version 3.10
+
+-------------------------------------------------------------------------------------------------------------------------------------
+16.01.19 - Released version 3.1.5.2
+-------------------------------------------------------------------------------------------------------------------------------------
+- js/jquery.calendar.js
+ - Added jquery option fc_extend (now you can use all fullcalendar options - valid for v3.2)
+ - Fixed stuck search result on page reload
+
+- includes/loader.php
+ - Added search value to a session
+
+- index.php
+ - Filter remains active on reload but with a selected state
+
+-------------------------------------------------------------------------------------------------------------------------------------
+15.01.19 - Released version 3.1.5.1
+-------------------------------------------------------------------------------------------------------------------------------------
+- Minor updates
+ - includes/loader.php
+ - includes/calendar.php
+ - includes/calendar.extension.php
+
+-------------------------------------------------------------------------------------------------------------------------------------
+22.09.18 - Released version 3.1.5
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Safe files to be updated (v3.1.5)
+---------------------------------
+- includes/cal_description.php
+ - Improved how custom fields is displayed
+
+- includes/cal_edit_update.php
+- includes/cal_quicksave.php
+ - Fixed issues with custom fields for (checkbox)
+
+- includes/calendar.extension.php
+ - Fixed issues with custom fields
+
+- includes/calendar.php
+ - Added a function to verify if string is serialized (Custom fields now are serialized values)
+
+- js/jquery.calendar.js
+ - Improved custom fields
+ - Fixed bugs
+
+-------------------------------------------------------------------------------------------------------------------------------------
+08.02.18 - Released version 3.1.2
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Safe files to be updated (v3.1.2)
+---------------------------------
+- includes/formParser.class.php
+ - Added default Value support for input type select
+
+- index.php
+ - Added gcal.js
+
+- js/g.map.js
+ - Improved google maps (used to be gray onload in their latest APIs)
+
+- js/gcal.js
+ - Downgrade to support current version
+
+- js/jquery.calendar.js
+ - Added a set of new options (enableDrop, enableResize, jsonConfig, gcalUrlText)
+ - Improved custom fields support (on openModal function)
+ - Added modal view to google calendar events (new function OpenModalGcal + eventRender modifications)
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+29.01.18 - Released version 3.1
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Safe files to be updated (v3.1)
+-------------------------------
+You can safely update:
+- css/bootstrap.css
+- css/fullcalendar.css
+- css/fullcalendar.print.css
+- css/style.css
+- includes/calendar.php
+- includes/formatter.php
+- index.php
+- js/bootstrap.js
+- js/gcal.js
+- js/jquery.calendar.js
+- js/locale-all.js
+- lib/moment.js
+- fonts
+
+In case you have modified some of these files, you have to look for (also compare these files):
+
+- css/style.css
+ - Added loading styles
+
+- includes/calendar.php
+ - added icon support to json_transform()
+ - removed a code from _construct
+ - 
+
+- includes/formatter.php
+ - Added bootstrap icons support via bbcode
+
+- index.php
+ - Added loading div
+
+- js/jquery.calendar.js
+ - Added loadingSelector
+ - Added loading method
+ - Added icons_title (Bootstrap Icon support to titles)
+ - Improved UX for select method
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+17.02.17 - Released version 3.0
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Safe files to be updated (v3.0)
+-------------------------------
+You can safely update:
+- calendar.php,
+- jquery.calendar.php
+- whole content inside js
+- whole content inside lib 
+- css /
+ - fullcalendar.css
+ - fullcalendar.print.css
+
+In case you have modified some of these files, you have to look for:
+
+- calendar.php 
+ - Fixed addEvent to avoid empty field from being saved (on some servers caused the Failed to Add Event error)
+
+- jquery.calendar.js
+ - Just the confgs/options
+
+- custom.js
+
+-------------------------------------------------------------------------------------------------------------------------------------
+25.10.16 - Fixed Importer
+-------------------------------------------------------------------------------------------------------------------------------------
+
+jquery.calendar.js -> line 408: change description to description_editable;
+importer.php
+export.php -> line 9 - line 10
+cal_export.php -> line 18-line 19
+

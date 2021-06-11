@@ -1,0 +1,108 @@
+
+.logo img{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 10px;
+	height: 75px;
+	width: 68px;
+}
+
+.header{
+	background: white;
+	padding: 6px 90px;
+	text-align: left;
+	color: black;
+	margin: 0px;
+	letter-spacing: 1px;
+	font: BentonSans-regular;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.topnav{
+	background-color: #990000;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.right{
+	text-align:right;
+}
+
+
+.topnav a{
+	font; bentonsans regular;
+	text-decoration: none;
+	font-size: 18px;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+	flaot: left;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 16px 24px;
+}
+
+.topnav a:hover .dropmenu:hover .dropbtn {
+	background: #890000;
+	color: white;
+}
+
+.banner_img {
+	background: white;
+	height: 250px;
+	color: black;
+	text-align: center;
+	background-image: url(sample-gates-banner.jpg);
+	background-size: cover;
+	background-position: center;
+}
+	
+.banner h2{
+	color: white;
+	padding: 8%;
+	font-size: 60px;
+	text-align: center;
+}	
+
+.dropmenu{
+	float: left;
+	overflow: hidden;
+}
+
+.dropmenu .dropbtn {
+	font-size: 18px;
+	border: none;
+	background-color: #990000;
+	color: white;
+	font-family: bentonsans regular;
+	padding: 16px 24px;
+	margin: 0;
+}
+
+.content{
+	display: none;
+	position: absolute;
+	background-color: lightgray;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+	z-index: 1;
+}
+
+.content a {
+	float: none;
+	color: black;
+	padding: 16px 24px;
+	display: block;
+	text-align: left;
+}
+
+.content a:hover {
+	background-color: #ddd;
+}
+
+.dropmenu:hover .content {
+	display: block;
+}
+
+
+
